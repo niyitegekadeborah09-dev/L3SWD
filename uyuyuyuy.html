@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+<html>
+  <body>
+    <pre id="output"></pre>
+
+    <script>
+      function printNumberTriangle(size) {
+        let result = "";
+        for (let i = 1; i <= size; i++) 
+        {
+          for (let j = 1; j <= i; j++) 
+          {
+            result += (2 * j - 1) + " ";
+          }
+          result += "\n";
+        }
+        document.getElementById("output").textContent = result;
+      }
+      printNumberTriangle(5);
+    </script>
+  </body>
+</html>
